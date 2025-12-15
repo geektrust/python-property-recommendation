@@ -26,7 +26,6 @@ def call_main():
     for command in commands:
         data = convert_input(command)
         output = main.aggregate_events_by_window(data,15)
-        print(output)
         s = json.dumps(output, default=lambda x: x.isoformat())
         print(s)
 
