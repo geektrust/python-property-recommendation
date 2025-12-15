@@ -56,3 +56,9 @@ since the Unix epoch.
 Assumptions:
 - event_time is always valid in format "%Y-%m-%dT%H:%M:%SZ"
 - amount can be safely cast to float
+
+#### How to execute
+
+```
+./run.sh "[{\"tenant_id\": \"t1\", \"user_id\": \"u1\", \"event_time\": \"2025-05-10T12:34:56Z\", \"amount\": 100.0}]"
+```
